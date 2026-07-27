@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Venta Registrada</title>
+</head>
+<body>
+
+<h1>Venta registrada correctamente</h1>
+
+<p><strong>Producto:</strong> <span th:text="${venta.producto}"></span></p>
+
+<p><strong>Cantidad:</strong> <span th:text="${venta.cantidad}"></span></p>
+
+<p><strong>Total:</strong> $<span th:text="${venta.total}"></span></p>
+
+<br>
+
+<a th:href="@{/ventas}">Registrar otra venta</a>
+
+</body>
+</html>

@@ -9,6 +9,21 @@
 <body>
 
 <h1>Sistema de Inventario para Panadería</h1>
+<hr>
+
+<h2>Menú</h2>
+
+<a th:href="@{/}">
+    Productos
+</a>
+
+|
+
+<a th:href="@{/ventas}">
+    Ventas
+</a>
+
+<hr>
 
 <form th:action="@{/guardar}" th:object="${producto}" method="post">
 
